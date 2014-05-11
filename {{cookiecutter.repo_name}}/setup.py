@@ -18,7 +18,7 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
-    name='{{ cookiecutter.repo_name }}',
+    name='{{ cookiecutter.pypi_name }}',
     version='{{ cookiecutter.version }}',
     description='{{ cookiecutter.project_short_description }}',
     long_description=readme + '\n\n' + history,
@@ -26,20 +26,20 @@ setup(
     author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     packages=[
-        '{{ cookiecutter.repo_name }}',
+        '{{ cookiecutter.package_name }}',
     ],
-    package_dir={'{{ cookiecutter.repo_name }}':
-                 '{{ cookiecutter.repo_name }}'},
+    package_dir={'{{ cookiecutter.package_name }}':
+                 '{{ cookiecutter.package_name }}'},
     include_package_data=True,
     install_requires=[
     ],
-    license="BSD",
+    license="MIT",
     zip_safe=False,
-    keywords='{{ cookiecutter.repo_name }}',
+    keywords='{{ cookiecutter.pypi_name }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',

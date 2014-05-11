@@ -4,9 +4,9 @@ Installation
 
 At the command line::
 
-    $ easy_install {{ cookiecutter.repo_name }}
+    $ easy_install {{ cookiecutter.pypi_name }}
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv {{ cookiecutter.repo_name }}
-    $ pip install {{ cookiecutter.repo_name }}
+    $ mkvirtualenv {{ cookiecutter.pypi_name }}
+    $ pip install {{ cookiecutter.pypi_name }}
